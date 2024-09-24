@@ -1,13 +1,11 @@
 const express = require('express');
-const userController = require('../controllers/userController');
+const vetController = require('../controllers/vetController');
 const router = express.Router();
 
-router.get('/', userController.getAllUsers);
-router.get('/new', userController.renderCreateForm);
-router.post('/', userController.createUser);
-router.get('/:id', userController.getUserById);
-router.get('/:id/edit', userController.renderEditForm);
-router.put('/:id', userController.updateUser);
-router.delete('/:id', userController.deleteUser);
+router.get('/', vetController.getAllVets);
+router.get('/:id', vetController.getVetById);
+router.get('/:id/edit', vetController.renderEditForm);
+router.put('/:id', vetController.updateVet);
+router.delete('/:id', vetController.deleteVet);
 
 module.exports = router;

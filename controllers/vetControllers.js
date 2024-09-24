@@ -1,89 +1,89 @@
-const User = require('../models/userModel');
+const Vet = require('../models/vetModel');
 
-const userController = {
-    createUser: (req, res) => {
-        const newUser = {
-            username: req.body.username,
+const vetController = {
+    createVet: (req, res) => {
+        const newVet = {
+            vetname: req.body.vetname,
             password: req.body.password,
             role: req.body.role,
         };
 
-        User.create(newUser, (err, userId) => {
+        Vet.create(newVet, (err, vetId) => {
             if (err) {
                 return res.status(500).json({ error: err });
             }
-            res.redirect('/users');
+            res.redirect('/vets');
         });
     },
 
-    getUserById: (req, res) => {
-        const userId = req.params.id;
+    getVetById: (req, res) => {
+        const vetId = req.params.id;
 
-        User.findById(userId, (err, user) => {
+        Vet.findById(vetId, (err, vet) => {
             if (err) {
                 return res.status(500).json({ error: err });
             }
-            if (!user) {
-                return res.status(404).json({ message: 'User not found' });
+            if (!vet) {
+                return res.status(404).json({ message: 'Vet not found' });
             }
-            res.render('users/show', { user });
+            res.render('vets/show', { vet });
         });
     },
 
-    getAllUsers: (req, res) => {
-        User.getAll((err, users) => {
+    getAllVets: (req, res) => {
+        Vet.getAll((err, vets) => {
             if (err) {
                 return res.status(500).json({ error: err });
             }
-            res.render('users/index', { users });
+            res.render('vets/index', { vets });
         });
     },
 
     renderCreateForm: (req, res) => {
-        res.render('users/create');
+        res.render('vets/create');
     },
 
     renderEditForm: (req, res) => {
-        const userId = req.params.id;
+        const vetId = req.params.id;
 
-        User.findById(userId, (err, user) => {
+        Vet.findById(vetId, (err, vet) => {
             if (err) {
                 return res.status(500).json({ error: err });
             }
-            if (!user) {
-                return res.status(404).json({ message: 'User not found' });
+            if (!vet) {
+                return res.status(404).json({ message: 'Vet not found' });
             }
-            res.render('users/edit', { user });
+            res.render('vets/edit', { vet });
         });
     },
 
-    updateUser: (req, res) => {
-        const userId = req.params.id;
-        const updatedUser = {
-            username: req.body.username,
+    updateVet: (req, res) => {
+        const vetId = req.params.id;
+        const updatedVet = {
+            vetname: req.body.vetname,
             password: req.body.password,
             role: req.body.role,
         };
 
-        User.update(userId, updatedUser, (err) => {
+        Vet.update(vetId, updatedVet, (err) => {
             if (err) {
                 return res.status(500).json({ error: err });
             }
-            res.redirect('/users');
+            res.redirect('/vets');
         });
     },
 
-    deleteUser: (req, res) => {
-        const userId = req.params.id;
+    deleteVet: (req, res) => {
+        const vetId = req.params.id;
 
-        User.delete(userId, (err) => {
+        Vet.delete(vetId, (err) => {
             if (err) {
                 return res.status(500).json({ error: err });
             }
-            res.redirect('/users');
+            res.redirect('/vets');
         });
     },
 };
 
-module.exports = userController;
+module.exports = vetController;
 
