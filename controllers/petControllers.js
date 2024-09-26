@@ -27,7 +27,7 @@ const petController = {
             if (err) {
                 return res.status(500).json({ error: err });
             }
-            res.redirect('/pets');
+            res.redirect('/cad?petCad');
         });
     },
 
@@ -41,7 +41,7 @@ const petController = {
             if (!pet) {
                 return res.status(404).json({ message: 'Pet not found' });
             }
-            res.render('pets/show', { pet });
+            res.render('/pags/pagPet', { pet });
         });
     },
 
@@ -50,12 +50,12 @@ const petController = {
             if (err) {
                 return res.status(500).json({ error: err });
             }
-            res.render('pets/index', { pets });
+            res.render('/pags/pagPet', { pets });
         });
     },
 
     renderCreateForm: (req, res) => {
-        res.render('pets/create');
+        res.render('/cad/petCad');
     },
 
     renderEditForm: (req, res) => {
@@ -68,7 +68,7 @@ const petController = {
             if (!pet) {
                 return res.status(404).json({ message: 'Pet not found' });
             }
-            res.render('pets/edit', { pet });
+            res.render('/info/infoPet', { pet });
         });
     },
 
@@ -99,7 +99,7 @@ const petController = {
             if (err) {
                 return res.status(500).json({ error: err });
             }
-            res.redirect('/pets');
+            res.redirect('/info/infoPet');
         });
     },
 
@@ -110,7 +110,7 @@ const petController = {
             if (err) {
                 return res.status(500).json({ error: err });
             }
-            res.redirect('/pets');
+            res.redirect('/pags/pagPet');
         });
     },
 };
