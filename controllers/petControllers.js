@@ -4,8 +4,23 @@ const petController = {
     createPet: (req, res) => {
         const newPet = {
             petname: req.body.petname,
+            nomeDono: req.body.nomeDono,
+            cpfD: req.body.cpfD,
+            telefone: req.body.telefone,
+            email: req.body.email,
+            raca: req.body.raca,
+            peso: req.body.peso,
+            idade: req.body.idade,
+            foto: req.bodt.foto,
+            rua: req.body.rua,
+            numero: req.body.numero,
+            bairro: req.bodt.bairro,
+            cidade: req.body.cidade,
+            uf: req.body.uf,
+            cep: req.body.cep,
+            pais: req.body.pais,
+            user: req.body.user,
             password: req.body.password,
-            role: req.body.role,
         };
 
         Pet.create(newPet, (err, petId) => {
@@ -61,8 +76,23 @@ const petController = {
         const petId = req.params.id;
         const updatedPet = {
             petname: req.body.petname,
+            nomeDono: req.body.nomeDono,
+            cpfD: req.body.cpfD,
+            telefone: req.body.telefone,
+            email: req.body.email,
+            raca: req.body.raca,
+            peso: req.body.peso,
+            idade: req.body.idade,
+            foto: req.bodt.foto,
+            rua: req.body.rua,
+            numero: req.body.numero,
+            bairro: req.bodt.bairro,
+            cidade: req.body.cidade,
+            uf: req.body.uf,
+            cep: req.body.cep,
+            pais: req.body.pais,
+            user: req.body.user,
             password: req.body.password,
-            role: req.body.role,
         };
 
         Pet.update(petId, updatedPet, (err) => {

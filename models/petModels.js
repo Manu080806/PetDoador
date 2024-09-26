@@ -1,9 +1,9 @@
 const db = require('../config/db');
 
-const User = {
-    create: (user, callback) => {
-        const query = 'INSERT INTO users (username, password, role) VALUES (?, ?, ?)';
-        db.query(query, [user.username, user.password, user.role], (err, results) => {
+const Pet = {
+    createPet: (pet, callback) => {
+        const query = 'INSERT INTO pets (petname, nomeDono, cpfD, telefone, email, raca, peso, idade, foto, rua, numero, bairro, cidade, uf, cep, pais, user, password) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )';
+        db.query(query, [pet.petname, pet.nomeDono, pet.cpfD, pet.telefone, pet.email, pet.raca, pet.peso, pet.idade, pet.foto, pet.rua, pet.numero, pet.bairro, pet.cidade, pet.uf, pet.cep, pet.pais, pet.user, pet.password], (err, results) => {
             if (err) {
                 return callback(err);
             }
@@ -12,7 +12,7 @@ const User = {
     },
 
     findById: (id, callback) => {
-        const query = 'SELECT * FROM users WHERE id = ?';
+        const query = 'SELECT * FROM pets WHERE id = ?';
         db.query(query, [id], (err, results) => {
             if (err) {
                 return callback(err);
@@ -21,9 +21,9 @@ const User = {
         });
     },
 
-    findByUsername: (username, callback) => {
-        const query = 'SELECT * FROM users WHERE username = ?';
-        db.query(query, [username], (err, results) => {
+    findByPetname: (petname, callback) => {
+        const query = 'SELECT * FROM pets WHERE petname = ?';
+        db.query(query, [petname], (err, results) => {
             if (err) {
                 return callback(err);
             }
@@ -31,9 +31,9 @@ const User = {
         });
     },
 
-    update: (id, user, callback) => {
-        const query = 'UPDATE users SET username = ?, password = ?, role = ? WHERE id = ?';
-        db.query(query, [user.username, user.password, user.role, id], (err, results) => {
+    updatePet: (id, pet, callback) => {
+        const query = 'UPDATE pets SET petname = ?, nomeDono = ?, cpfD = ?, telefone = ?, email = ?, raca = ?, peso = ?, idade = ?, foto = ?, rua = ?, numero = ?, bairro = ?, cidade = ?, uf = ?, cep = ?, pais = ?, user = ?, password = ?, WHERE id = ?';
+        db.query(query, [pet.petname, pet.nomeDono, pet.cpfD, pet.telefone, pet.email, pet.raca, pet.peso, pet.idade, pet.foto, pet.rua, pet.numero, pet.bairro, pet.cidade, pet.uf, pet.cep, pet.pais, pet.user, pet.password], (err, results) => {
             if (err) {
                 return callback(err);
             }
@@ -41,8 +41,8 @@ const User = {
         });
     },
 
-    delete: (id, callback) => {
-        const query = 'DELETE FROM users WHERE id = ?';
+    deletePet: (id, callback) => {
+        const query = 'DELETE FROM pets WHERE id = ?';
         db.query(query, [id], (err, results) => {
             if (err) {
                 return callback(err);
@@ -51,8 +51,8 @@ const User = {
         });
     },
 
-    getAll: (callback) => {
-        const query = 'SELECT * FROM users';
+    getAllPets: (callback) => {
+        const query = 'SELECT * FROM pets';
         db.query(query, (err, results) => {
             if (err) {
                 return callback(err);
@@ -63,5 +63,5 @@ const User = {
 };
 
 
-module.exports = User;
+module.exports = Pet;
 

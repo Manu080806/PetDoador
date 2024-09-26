@@ -1,9 +1,9 @@
 const db = require('../config/db');
 
-const User = {
-    create: (user, callback) => {
-        const query = 'INSERT INTO users (username, password, role) VALUES (?, ?, ?)';
-        db.query(query, [user.username, user.password, user.role], (err, results) => {
+const Vet = {
+    createVet: (vet, callback) => {
+        const query = 'INSERT INTO vets (vetname, nomeDono, cnpj, telefone, email, rua, numero, bairro, cidade, uf, cep, pais, user, password) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )';
+        db.query(query, [vet.vetname, vet.nomeDono,vet.cnpj,vet.telefone,vet.email,vet.rua,vet.numero,vet.bairro,vet.cidade,vet.uf,vet.cep,vet.pais,vet.user,vet.password], (err, results) => {
             if (err) {
                 return callback(err);
             }
@@ -12,7 +12,7 @@ const User = {
     },
 
     findById: (id, callback) => {
-        const query = 'SELECT * FROM users WHERE id = ?';
+        const query = 'SELECT * FROM vets WHERE id = ?';
         db.query(query, [id], (err, results) => {
             if (err) {
                 return callback(err);
@@ -21,9 +21,9 @@ const User = {
         });
     },
 
-    findByUsername: (username, callback) => {
-        const query = 'SELECT * FROM users WHERE username = ?';
-        db.query(query, [username], (err, results) => {
+    findByVetname: (vetname, callback) => {
+        const query = 'SELECT * FROM vets WHERE petname = ?';
+        db.query(query, [vetname], (err, results) => {
             if (err) {
                 return callback(err);
             }
@@ -31,9 +31,9 @@ const User = {
         });
     },
 
-    update: (id, user, callback) => {
-        const query = 'UPDATE users SET username = ?, password = ?, role = ? WHERE id = ?';
-        db.query(query, [user.username, user.password, user.role, id], (err, results) => {
+    updateVet: (id, vet, callback) => {
+        const query = 'UPDATE vets SET vetname = ?, nomeDono = ?, cnpj = ?, telefone = ?, email = ?, rua = ?, numero = ?, bairro = ?, cidade = ?, uf = ?, cep = ?, pais = ?, user = ?, password = ? WHERE id = ?';
+        db.query(query, [vet.vetname, vet.nomeDono, vet.cnpj, vet.telefone, vet.email, vet.rua, vet.numero, vet.bairro, vet.cidade, vet.uf, vet.cep, vet.pais, vet.user, vet.password], (err, results) => {
             if (err) {
                 return callback(err);
             }
@@ -41,8 +41,8 @@ const User = {
         });
     },
 
-    delete: (id, callback) => {
-        const query = 'DELETE FROM users WHERE id = ?';
+    deleteVet: (id, callback) => {
+        const query = 'DELETE FROM vets WHERE id = ?';
         db.query(query, [id], (err, results) => {
             if (err) {
                 return callback(err);
@@ -51,8 +51,8 @@ const User = {
         });
     },
 
-    getAll: (callback) => {
-        const query = 'SELECT * FROM users';
+    getAllVets: (callback) => {
+        const query = 'SELECT * FROM vets';
         db.query(query, (err, results) => {
             if (err) {
                 return callback(err);
@@ -63,5 +63,5 @@ const User = {
 };
 
 
-module.exports = User;
+module.exports = Vet;
 

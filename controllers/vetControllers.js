@@ -4,8 +4,19 @@ const vetController = {
     createVet: (req, res) => {
         const newVet = {
             vetname: req.body.vetname,
+            nomeDono: req.body.nomeDono,
+            cnpj: req.body.cnpj,
+            telefone: req.body.telefone,
+            email: req.body.email,
+            rua: req.body.rua,
+            numero: req.body.numero,
+            bairro: req.bodt.bairro,
+            cidade: req.body.cidade,
+            uf: req.body.uf,
+            cep: req.body.cep,
+            pais: req.body.pais,
+            user: req.body.user,
             password: req.body.password,
-            role: req.body.role,
         };
 
         Vet.create(newVet, (err, vetId) => {
@@ -61,8 +72,20 @@ const vetController = {
         const vetId = req.params.id;
         const updatedVet = {
             vetname: req.body.vetname,
+            nomeDono: req.body.nomeDono,
+            cnpj: req.body.cnpj,
+            telefone: req.body.telefone,
+            email: req.body.email,
+            rua: req.body.rua,
+            numero: req.body.numero,
+            bairro: req.bodt.bairro,
+            cidade: req.body.cidade,
+            uf: req.body.uf,
+            cep: req.body.cep,
+            pais: req.body.pais,
+            user: req.body.user,
             password: req.body.password,
-            role: req.body.role,
+            
         };
 
         Vet.update(vetId, updatedVet, (err) => {
