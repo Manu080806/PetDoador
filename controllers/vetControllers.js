@@ -1,4 +1,4 @@
-const Vet = require('../models/vetModel');
+const Vet = require('../models/vetModels');
 
 const vetController = {
     createVet: (req, res) => {
@@ -46,7 +46,7 @@ const vetController = {
             if (err) {
                 return res.status(500).json({ error: err });
             }
-            res.render('vets/index', { vets });
+            res.render('vets', { vets });
         });
     },
 

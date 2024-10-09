@@ -11,7 +11,7 @@ const Pet = {
         });
     },
 
-    findById: (id, callback) => {
+    findByPetId: (id, callback) => {
         const query = 'SELECT * FROM pets WHERE id = ?';
         db.query(query, [id], (err, results) => {
             if (err) {

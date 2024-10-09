@@ -1,4 +1,4 @@
-const Pet = require('../models/petModel');
+const Pet = require('../models/petModels');
 
 const petController = {
     createPet: (req, res) => {
@@ -27,7 +27,7 @@ const petController = {
             if (err) {
                 return res.status(500).json({ error: err });
             }
-            res.redirect('/cad?petCad');
+            res.redirect('log/logPet'), { login };
         });
     },
 
@@ -41,7 +41,7 @@ const petController = {
             if (!pet) {
                 return res.status(404).json({ message: 'Pet not found' });
             }
-            res.render('/pags/pagPet', { pet });
+            res.render('pags/pagPet', { pet });
         });
     },
 
@@ -50,12 +50,12 @@ const petController = {
             if (err) {
                 return res.status(500).json({ error: err });
             }
-            res.render('/pags/pagPet', { pets });
+            res.render('pags/pagVet', { pets });
         });
     },
 
     renderCreateForm: (req, res) => {
-        res.render('/cad/petCad');
+        res.render('pets/create');
     },
 
     renderEditForm: (req, res) => {
@@ -68,7 +68,7 @@ const petController = {
             if (!pet) {
                 return res.status(404).json({ message: 'Pet not found' });
             }
-            res.render('/info/infoPet', { pet });
+            res.render('pags/pagPet', { pet });
         });
     },
 
@@ -99,7 +99,7 @@ const petController = {
             if (err) {
                 return res.status(500).json({ error: err });
             }
-            res.redirect('/info/infoPet');
+            res.redirect('pags/pagPet');
         });
     },
 
@@ -110,7 +110,7 @@ const petController = {
             if (err) {
                 return res.status(500).json({ error: err });
             }
-            res.redirect('/pags/pagPet');
+            res.redirect('/pets');
         });
     },
 };

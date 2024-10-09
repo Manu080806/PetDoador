@@ -1,13 +1,13 @@
 const express = require('express');
-const petController = require('../controllers/petController');
-const vetController = require('../controllers/vetController');
+const petController = require ('../controllers/petControllers');
+const vetController = require('../controllers/vetControllers');
 const router = express.Router();
 
 
-router.get('/', petController.getAllUsers);
-router.get('/:id', petController.getUserById);
+router.get('/', petController.getAllPets);
+router.get('/:id', petController.getPetById);
 
-router.get('/', vetController.getAllUsers);
-router.get('/:id', vetController.getUserById);
+router.get('/', vetController.getAllVets);
+router.get('/:id', vetController.getVetById);
 
 module.exports = router;

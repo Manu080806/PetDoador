@@ -1,5 +1,5 @@
 const express = require('express');
-const vetController = require('../controllers/vetController');
+const vetController = require('../controllers/vetControllers');
 const router = express.Router();
 
 router.get('/', vetController.getAllVets);

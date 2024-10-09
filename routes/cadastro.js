@@ -1,6 +1,6 @@
 const express = require('express');
-const petController = require('../controllers/petController');
-const vetController = require('../controllers/vetController');
+const petController = require('../controllers/petControllers');
+const vetController = require('../controllers/vetControllers');
 const router = express.Router();
 
 router.get('/', petController.getAllPets);
