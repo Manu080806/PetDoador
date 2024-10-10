@@ -46,12 +46,14 @@ const petController = {
     },
 
     getAllPets: (req, res) => {
-        Pet.getAll((err, pets) => {
-            if (err) {
-                return res.status(500).json({ error: err });
+        class Pet {
+            static getAll(err, pets) {
+                if (err) {
+                    return res.status(500).json({ error: err });
+                }
+                res.render('pags/pagVet', { pets });
             }
-            res.render('pags/pagVet', { pets });
-        });
+        }
     },
 
     renderCreateForm: (req, res) => {

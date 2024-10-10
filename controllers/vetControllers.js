@@ -23,7 +23,7 @@ const vetController = {
             if (err) {
                 return res.status(500).json({ error: err });
             }
-            res.redirect('/vets');
+            res.redirect('/cadastro');
         });
     },
 
