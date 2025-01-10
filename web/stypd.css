@@ -1,0 +1,873 @@
+@charset "UTF-8";
+
+#pag{
+    background-color: #ffffffef;
+}
+
+html{
+    background-color: #e17070;
+}
+
+#pe{
+    background-color: #e17070;
+}
+
+#pagPet{
+    background-color: #ffffffef;
+}
+
+#patinhas {
+    width: 100%;
+    height: 32%;
+}
+
+#logo {
+    height: 100px;
+    width:240px;
+    position: absolute;
+    top: 30px;
+    right: 79%;
+}
+
+#imglog {
+    height: 120px;
+    width: 130px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    position: absolute;
+    top: 20px;
+    left: 80%;
+   }
+
+#infogeral{
+    background-color: #D7D8DA;
+    margin-top: 50px;
+    margin-left: 230px;
+    margin-right: 230px;
+    padding: 50px;
+    padding-top: 30px;
+    padding-right: 100px;
+    padding-left: 80px;
+    border-radius: 30px;
+    font-size: 18px;
+   }
+
+   #infogeral2{
+    background-color: #D7D8DA;
+    margin-top: 50px;
+    margin-left: 230px;
+    margin-right: 230px;
+    padding: 50px;
+    padding-top: 30px;
+    padding-right: 80px;
+    padding-left: 80px;
+    border-radius: 30px;
+    font-size: 17px;
+   }
+
+.next{
+    padding: 12.5px;
+    color: white;
+    margin-left: 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    background-color: #B22F30;
+}
+.back{
+    padding: 12.5px;
+    color: white;
+    margin-left: 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    background-color: #B22F30;
+}
+
+h3 {
+    font-size: 30px;
+   }
+
+#uservet{
+    height: 110px;
+    width: 300px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    position: absolute;
+    top: 20px;
+    left: 73%;
+   }
+
+   #userpet{
+    height: 110px;
+    width: 300px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    position: absolute;
+    top: 20px;
+    left: 73%;
+   }
+
+#infoGidx  {
+    width: 35%;
+    text-decoration: none;
+    padding: 10px;
+    margin: 31.5px;
+    margin-left: 31.5%;
+   }
+
+#infoGV {
+    height:34%;
+    width: 29%;
+    text-decoration: none;
+    padding: 10px;
+    margin: 40px;
+    margin-left: 10px;
+}
+   
+#infoGP {
+    height:33%;
+    width: 27%;
+    text-decoration: none;
+    padding: 10px;
+    margin-left:-85px;
+}
+
+#infoGPV{
+    height:33%;
+    width: 27%;
+    text-decoration: none;
+    padding: 10px;
+    margin-left:-85px;
+}
+
+#infoP {
+    height:40%;
+    width: 35%;
+    text-decoration: none;
+    padding: 10px;
+    margin:2px;
+    margin-left:70px;
+}
+
+#vetcads{
+    height: 44%;
+    width: 39%;
+    text-decoration: none;
+    padding: 10px;
+    margin-left: -100px;
+}
+
+#infoCP {
+    height:40%;
+    width: 35%;
+    text-decoration: none;
+    padding: 10px;
+    margin: 40px;
+    margin-left: 180px;
+    position: relative;
+    top:20px;
+}
+
+#cadastro{
+    background-color: #D7D8DA ;
+    text-align: center;
+    margin-top: 180px;
+    margin-left: 450px;
+    margin-right: 450px;
+    padding: 40px;
+    padding-bottom: 60px;
+    border-radius: 20px;
+}
+
+#hcad {
+    font-size: 28px;
+}
+
+#login {
+    background-color: #D7D8DA ;
+    text-align: center;
+    margin-top:180px;
+    margin-left: 450px;
+    margin-right: 450px;
+    padding: 40px;
+    padding-bottom: 15px;
+    border-radius: 20px;
+}
+
+.npscad{
+    margin: 28px;
+}
+
+#hlog {
+    font-size: 30px;
+}
+
+   #logP{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #B22F30;
+    padding: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin: 40px;
+    border-radius: 10px;
+   }
+   
+   #logV{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #B22F30;
+    padding: 10px;
+    margin: 40px;
+    margin-top: 100%;
+    border-radius: 10px;
+   }
+   
+   #cad{
+    text-decoration: none;
+   color: #ff0000;
+   }
+   
+   #cadPet{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #B22F30;
+    padding: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin: 40px;
+    border-radius: 10px;
+   }
+   
+   #cadVet{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #B22F30;
+    padding: 10px;
+    margin: 40px;
+    margin-top: 100%;
+    border-radius: 10px;
+   }
+
+   #logpet{
+    background-color: #D7D8DA ;
+    text-align: center;
+    margin: 150px;
+    margin-left: 450px;
+    margin-right: 450px;
+    margin-top: 200px;
+    padding: 40px;
+    border-radius: 20px;
+   }
+
+   #campo{
+    width: 200px;
+    height: 25px;
+    border-radius: 15px;
+   }
+
+   #camposenha {
+    width: 200px;
+    height: 25px;
+    border-radius: 15px;
+   }
+
+   #butentrar{
+    background-color: #B22F30;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #ffffff;
+   }
+
+    #fgtpwd{
+    color: #B22F30 ;
+    text-decoration: none;
+    }
+
+   #iconhome{
+    height: 55px;
+    position: absolute;
+    top: 88%;
+    left: 93.5%;
+   }
+
+   #iconhome1{
+    height: 55px;
+    position: relative;
+    left: 93.5%;
+   }
+   
+   #iconhome2{
+    height: 55px;
+    position: relative;
+    left: 93.5%;
+   }
+
+   #cadastroPet{
+    background-color: #D7D8DA ;
+    text-align: center;
+    margin-left: 270px;
+    margin-right: 220px;
+    margin-top: 110px;
+    padding: 30px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+   }
+
+   #legcadpet{
+    padding: 10px;
+    margin-bottom: -20px;
+    font-size: 25px;
+    font-weight: bold;
+   }
+
+   #tabpet1{
+    padding: 15px;
+   }
+
+   #tabpet2{
+    padding: 15px;
+    padding-left: 12px;
+   }
+
+   #tabpet3{
+    padding: 15px;
+   }
+
+   .pet{
+    font-size: 17px;
+    color: #494949;
+    font-family: Goudy Old Style;
+   }
+
+   #petname{
+    margin: 10px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+   }
+
+   .tutor{
+    font-size: 17px;
+    color: #494949;
+    font-family: Goudy Old Style;
+   }
+
+   #nomeDono{
+    margin: 10px;
+    width: 200px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+   }
+
+    .cpf{
+    font-size: 17px;
+    color: #494949;
+    font-family: Goudy Old Style;
+   }
+
+   #cpfD{
+    margin: 10px;
+    width: 85px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+   }
+
+   #cadastroVet{
+    background-color: #D7D8DA ;
+    text-align: center;
+    margin-left: 290px;
+    margin-right: 260px;
+    margin-top: 120px;
+    padding: 35px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+   }
+   
+   .vet{
+    font-size: 17px;
+    color: #494949;
+    font-family: Goudy Old Style;
+   }
+
+   #vetname{
+    margin: 10px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+   }
+
+   .dono{
+    font-size: 17px;
+    color: #494949;
+    font-family: Goudy Old Style;
+   }
+
+   #nomeDono{
+    margin: 10px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+   }
+
+   .cnpj{
+    font-size: 17px;
+    color: #494949;
+    font-family: Goudy Old Style;
+   }
+
+   #cnpj{
+    margin: 10px;
+    width: 120px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+   }
+
+   .cell{
+    font-size: 17px;
+    color: #494949;
+    font-family: Goudy Old Style;
+   }
+   
+   #telefone{
+    margin: 10px;
+    width: 105px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+   }
+
+   .email{
+    font-size: 17px;
+    color: #494949;
+    font-family: Goudy Old Style;
+   }
+
+   #email{
+    margin: 10px;
+    width: 225px;
+    border-radius: 20px;
+   }
+
+   .raca{
+    font-size: 17px;
+    color: #494949;
+    font-family: Goudy Old Style;
+   }
+
+   #raca{
+    margin: 10px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+   }
+
+   .peso{
+    font-size: 17px;
+    padding-right:15px ;
+    color: #494949;
+    font-family: Goudy Old Style;
+   }
+
+   #peso{
+    margin: 10px;
+    width: 55px;
+    margin-right: 50px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+   }
+
+   .idade{
+    font-size: 17px;
+    color: #494949;
+    font-family: Goudy Old Style;
+   }
+
+   #idade{
+    margin: 10px;
+    width: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+   }
+
+   .cadfoto{
+    position: absolute;
+    top: 130px;
+    left: 65%;
+   }
+
+   .foto{
+    font-size: 17px;
+    color: #494949;
+    font-family: Goudy Old Style;
+   }
+
+   .picture__image{
+    margin: 40px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    border: 2px solid  #494949;
+    border-radius: 20px;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 16/9;
+    cursor: pointer;
+    background-color:#ffffff;
+   }
+
+   #foto{
+    margin: 10px;
+    display: none;
+    padding-bottom: 100px;
+    border-radius: 20px;
+   }
+
+   .rua{
+    font-size: 17px;
+    color: #494949;
+    font-family: Goudy Old Style;
+   }
+
+   #rua{
+    margin: 10px;
+    width: 250px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+   }
+
+   .num{
+    padding-right:15px ;    
+    font-size: 17px;
+    color: #494949;
+    font-family: Goudy Old Style;
+   }
+
+   #numero{
+    padding-right:10px ;
+    margin: 10px;
+    width: 30px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+   }
+
+   .bairro{
+    font-size: 17px;
+    color: #494949;
+    font-family: Goudy Old Style;
+   }
+
+   #bairro{
+    margin: 10px;
+    width: 250px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+   }
+
+   .cidade{
+    font-size: 17px;
+    color: #494949;
+    font-family: Goudy Old Style;
+   }
+
+   #cidade{
+    margin: 10px;
+    width: 250px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+   }
+
+   .uf{
+    font-size: 17px;
+    color: #494949;
+    font-family: Goudy Old Style;
+   }
+
+   #uf{
+    margin: 10px;
+    width: 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+   }
+
+   .cep{
+    font-size: 17px;
+    color: #494949;
+    font-family: Goudy Old Style;
+   }
+
+   #cep{
+    margin: 10px;
+    width: 65px;
+    border-radius: 10px;
+   }
+
+   #cadpedbut{
+    color:#ffffff;
+    text-decoration: none;
+   }
+
+   #butcad{
+    background-color: #B22F30;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+   }
+
+   #cadlog{
+    background-color: #D7D8DA ;
+    text-align: center;
+    margin-left: 460px;
+    margin-right: 440px;
+    margin-top: 150px;
+    padding: 60px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    border-radius: 20px;
+   }
+
+   #legcad{
+    padding: 10px;
+    margin-bottom: -20px;
+    font-size: 25px;
+    font-weight: bold;
+   }
+
+   .user{
+    margin-top: 25px;
+    font-size: 17px;
+    color: #494949;
+    font-family: Goudy Old Style;
+   }
+
+   #user{
+    margin: 10px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+   }
+
+   .senha{
+    font-size: 17px;
+    color: #494949;
+    font-family: Goudy Old Style;
+   }
+
+   #password{
+    margin: 10px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+   }
+
+   #butcad{
+    background-color: #B22F30;
+    text-align: center;
+    padding: 10px;
+    width: 90px;
+    border-radius: 20px;
+   }
+
+   #campcad{
+    color:#ffffff;
+    text-decoration: none;
+   }
+
+   #tabPet{
+    background-color: #D7D8DA ;
+    text-align: center;
+    margin-left: 355px;
+    margin-right: 337px;
+    margin-top: 15px;
+    padding: 25px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+   }
+
+   #editpet{
+    background-color: #B22F30;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 25px;   
+   }
+
+   #editfoto{
+    border: 2px solid #494949;
+    margin-left: 60px;
+    border-radius: 20px;
+    width: 135px;
+    height: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 16/9;
+    cursor: pointer;
+    background-color: #ffffff;   
+   }
+   
+   #tabVet{
+    background-color: #D7D8DA ;
+    text-align: center;
+    margin-left: 355px;
+    margin-right: 320px;
+    margin-top: 15px;
+    padding: 25px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+   }
+
+    #seta{
+    width: 10%;
+    height: 20%;
+    margin-left: 50px;
+    border-radius: 25px;
+   }
+
+    #vetcads{
+    width: 150px;
+    height: 130px;
+}
+
+.sair{
+    color:white;
+    text-decoration:none;
+ }
+
+    .butsair{
+    background-color: #B22F30;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    margin-top: 40px;
+    margin-left:20px;
+    width: 10%;
+ }
+
+ .nomeuser{
+    position: absolute;
+    top:14.5%;
+    left:77%;
+}
+
+.clinicascads{
+    width: 50%;
+    padding: 20px;
+    margin-top:50px;
+    margin-left: 50px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #B22F30;
+}
+
+.tabVetCad{
+    background-color: #D7D8DA;
+    border-radius: 30px;
+    text-align: center;
+    padding: 40px;
+    position: relative;
+    top:20px;
+    left:22.5%
+    
+}
+
+.thVetCad{
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.tdVetCad{
+    padding: 5px;
+}
+
+.petscads{
+    width: 50%;
+    padding: 20px;
+    margin-top:50px;
+    margin-left: 50px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #B22F30;
+}
+
+.tabPetCad{
+    background-color: #D7D8DA;
+    border-radius: 30px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    top:20px;
+    left:5%;
+}
+.thPetCad{
+    padding: 8px;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.tdPetCad{
+    padding: 5px;
+}
+
+.infodopet{
+    width: 50%;
+    padding: 15px;
+    margin-top:20px;
+    margin-left: 23%;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #B22F30; 
+}
+
+.tabInfoPet{
+    background-color: #D7D8DA;
+    border-radius: 30px;
+    text-align: center;
+    padding: 40px;
+    position: relative;
+    top:15px;
+    left:23%
+}
+
+.tabInfoPet2{
+    background-color: #D7D8DA;
+    border-radius: 30px;
+    text-align: center;
+    padding: 40px;
+    position: absolute;
+    top: 200px;
+    left:55%
+}
+
+.thInfoPet{
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.arrowLeft{
+    color: #470000;
+    margin-left: 40px;
+}
+
+.arrowLeftPV{
+    color: #470000;
+    position: relative;
+    top: 50px;
+    margin-left: 40px;
+}
+
+.trash{
+    background-color: #B22F30;
+    border-radius:20px;
+    margin-left: 93%;
+    padding: 20px;
+    color: white;
+}
