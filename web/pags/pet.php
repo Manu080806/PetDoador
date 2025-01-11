@@ -35,7 +35,6 @@ include_once('../config.php');
     <table class="tabPetCad">
   <thead>
     <tr>
-      <th class='thPetCad' scope="col">Nome de usuário</th>
       <th class='thPetCad' scope="col">Nome do Pet</th>
       <th class='thPetCad' scope="col">Nome do Tutor</th>
       <th class='thPetCad' scope="col">Raça do pet</th>
@@ -49,7 +48,6 @@ include_once('../config.php');
          while($user_data = mysqli_fetch_assoc($result))
          {
              echo"<tr>";
-             echo"<td class='tdPetCad' >".$user_data['user']."</td>";
              echo"<td class='tdPetCad' >".$user_data['petname']."</td>";
              echo"<td class='tdPetCad' >".$user_data['nomeDono']."</td>";
              echo"<td class='tdPetCad' >".$user_data['raca']."</td>";

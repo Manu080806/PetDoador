@@ -33,20 +33,22 @@ include_once('../config.php');
     <table class="tabVetCad">
   <thead>
     <tr>
-      <th class='thVetCad' scope="col">Nome de usuário</th>
       <th class='thVetCad' scope="col">Nome da Clínica</th>
       <th class='thVetCad' scope="col">E-mail</th>
       <th class='thVetCad' scope="col">Telefone</th>
+      <th class='thVetCad' scope="col">Cidade</th>
+      <th class='thVetCad' scope="col">UF</th>
     </tr>
   </thead>      <tbody>
     <?php
          while($user_data = mysqli_fetch_assoc($result))
          {
              echo"<tr>";
-             echo"<td class='tdVetCad' >".$user_data['user']."</td>";
              echo"<td class='tdVetCad' >".$user_data['vetname']."</td>";
              echo"<td class='tdVetCad' >".$user_data['email']."</td>";
              echo"<td class='tdVetCad' >".$user_data['telefone']."</td>";
+             echo"<td class='tdVetCad' >".$user_data['cidade']."</td>";
+             echo"<td class='tdVetCad' >".$user_data['uf']."</td>";
              echo"</tr>";
          }    
     ?>
